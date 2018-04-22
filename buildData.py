@@ -110,7 +110,7 @@ def get_data(filename, vocab, dont_skip, max_code_length, max_nl_length):
   print 'Total size = ' + str(len(dataset))
   print 'Total skipped = ' + str(skipped)
 
-  f = open(os.environ["CODENN_WORK"] + '/' + os.path.basename(filename) + "." + lang, 'w')
+  f = open('temp1' + '.csharp', 'w')
   f.write(json.dumps(dataset))
   f.close()
 
